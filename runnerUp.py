@@ -1,4 +1,21 @@
+def FindRunnerUP(lst):
+    return sorted(lst)[-2]
+
+
 if __name__ == '__main__':
+
+    n = int(input())
+    arr = map(int, input().split())
+    arrFin = []
+    for x in arr:
+        if x not in arrFin:
+            arrFin.append(x)
+
+    print(FindRunnerUP(arrFin))
+
+    """ 
+    Code V 1.0
+
     n = int(input())
     arr = map(int, input().split())
     arrFin = []
@@ -9,3 +26,4 @@ if __name__ == '__main__':
     arrFin = sorted(arrFin)
 
     print(arrFin[len(arrFin)-2])
+    """
